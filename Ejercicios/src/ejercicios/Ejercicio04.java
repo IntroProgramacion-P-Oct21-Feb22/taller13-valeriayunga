@@ -39,10 +39,10 @@ public class Ejercicio04 {
                     System.out.printf("agregue sueldo %d para usuario %d\n",
                             j, i);
                     sueldo = entrada.nextDouble();
-                     if (sueldo > 10 || sueldo < 0) {
-                    throw new Exception("El sueldo no debe ser mayor a "
-                            + "10 o menor a 0 ");
-                }
+                    if (sueldo > 1000 || sueldo < 0) {
+                        throw new Exception("El sueldo no debe ser mayor a "
+                                + "1000 o menor a 0 ");
+                    }
                     arregloSueldos[j] = sueldo;
                     j = j + 1;
                 }
@@ -60,7 +60,7 @@ public class Ejercicio04 {
 
             System.out.printf("Existe un error de tipo %s\n",
                     inputMismatchException);
-        }catch (Exception e) {
+        } catch (Exception e) {
             System.out.printf("Ocurrió una excepción %s\n", e);
         }
     }
